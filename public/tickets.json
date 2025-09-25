@@ -1,0 +1,110 @@
+[
+  {
+    "id": "TKT-001",
+    "title": "Unable to login to portal",
+    "description": "User reports authentication failure when trying to sign in with correct credentials. Error shown: 'Invalid token'.",
+    "customer": "Arafat Rahman",
+    "priority": "High",
+    "status": "In-Progress",
+    "createdAt": "2025-09-18"
+  },
+  {
+    "id": "TKT-002",
+    "title": "Payment gateway timeout",
+    "description": "Checkout fails intermittently; payments timeout after 30s. Occurs on mobile and desktop.",
+    "customer": "Sadia Noor",
+    "priority": "Critical",
+    "status": "Open",
+    "createdAt": "2025-09-20"
+  },
+  {
+    "id": "TKT-003",
+    "title": "Profile picture upload corrupted",
+    "description": "Image upload succeeds but uploaded avatar appears distorted on profile page.",
+    "customer": "Rafi Khan",
+    "priority": "Medium",
+    "status": "Pending",
+    "createdAt": "2025-09-21"
+  },
+  {
+    "id": "TKT-004",
+    "title": "Slow dashboard load times",
+    "description": "Dashboard takes >10s to load for users with >200 items in their account.",
+    "customer": "Meher Afroze",
+    "priority": "High",
+    "status": "In-Progress",
+    "createdAt": "2025-09-22"
+  },
+  {
+    "id": "TKT-005",
+    "title": "Incorrect invoice total",
+    "description": "Invoice #INV-092 shows wrong tax calculation for orders with discounts.",
+    "customer": "Bayazid Hasan",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2025-09-23"
+  },
+  {
+    "id": "TKT-006",
+    "title": "Search results missing recent items",
+    "description": "Items created in the last 24 hours do not appear in search until indexing runs manually.",
+    "customer": "Nusrat Jahan",
+    "priority": "Medium",
+    "status": "In-Progress",
+    "createdAt": "2025-09-24"
+  },
+  {
+    "id": "TKT-007",
+    "title": "Notification emails not sent",
+    "description": "Transactional emails (password reset, notifications) are queued but not delivered. SMTP returns 421 occasionally.",
+    "customer": "Imran Sarker",
+    "priority": "Critical",
+    "status": "Open",
+    "createdAt": "2025-09-24"
+  },
+  {
+    "id": "TKT-008",
+    "title": "Mobile layout broken on iPhone SE",
+    "description": "Layout overlaps on smaller screens; buttons become unclickable.",
+    "customer": "Fatema Begum",
+    "priority": "Low",
+    "status": "Resolved",
+    "createdAt": "2025-09-15"
+  },
+  {
+    "id": "TKT-009",
+    "title": "Export CSV contains malformed rows",
+    "description": "CSV export for reports includes extra commas and breaks when fields contain newlines.",
+    "customer": "Sabbir Malik",
+    "priority": "Medium",
+    "status": "Pending",
+    "createdAt": "2025-09-19"
+  },
+  {
+    "id": "TKT-010",
+    "title": "Two-factor authentication SMS delay",
+    "description": "Users report receiving OTP SMS after 2–3 minutes causing timeouts on verification.",
+    "customer": "Lina Chowdhury",
+    "priority": "High",
+    "status": "In-Progress",
+    "createdAt": "2025-09-17"
+  },
+  {
+    "id": "TKT-011",
+    "title": "Account deletion request not processed",
+    "description": "Delete account flow shows success but data remains in DB; user can still log in.",
+    "customer": "Rashedul Islam",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2025-09-21"
+  },
+  {
+    "id": "TKT-012",
+    "title": "Typo in terms & conditions page",
+    "description": "Several grammatical errors noticed on the terms page; need copy update.",
+    "customer": "Marketing Team",
+    "priority": "Low",
+    "status": "Resolved",
+    "createdAt": "2025-09-12"
+  }
+]

@@ -1,12 +1,11 @@
 import React from "react";
 import vector1 from "./assets/vector1.png";
-import vector2 from "./assets/vector2.png";
 
 const Banner = () => {
   return (
     <div className=" p-8 max-w-[1280px] mx-auto grid grid-cols-2 gap-5">
       <div className="h-[180px] w-full bg-gradient-to-r from-[#632EE3] to-[#9F62F2] flex flex-col justify-center items-center  relative ">
-        <div className=" absolute left-0 top-0 h-auto">
+        <div className=" absolute left-0 top-0 h-auto ">
           <img className="" src={vector1} alt="" />
         </div>
         <div className=" absolute right-0 top-0 h-auto scale-x-[-1]">

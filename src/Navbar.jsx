@@ -2,7 +2,7 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <div class="navbar  shadow-sm max-w-[1280px] mx-auto px-8 ">
+    <div class="navbar  shadow-sm max-w-[1280px] mx-auto px-8 bg-white">
       <div class="flex-1">
         <a class="btn btn-ghost text-xl">CS — Ticket System</a>
       </div>
