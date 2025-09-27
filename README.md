@@ -1,16 +1,11 @@
-# React + Vite
+#### 1
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+JSX (JavaScript XML) হলো React-এ ব্যবহৃত একটি সিনট্যাক্স, যেখানে আমরা HTML মতো কোড লিখি কিন্তু সেটা আসলে জাভাস্ক্রিপ্টে রূপান্তরিত হয়। এটি ডাইনামিক,সহজবোধ্য.
 
-Currently, two official plugins are available:
+#### 2
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**_State_** হলো React কম্পোনেন্টের ভেতরের লোকাল ডাট। এটি পরিবর্তন করা যায় setState / useState দিয়ে। অনযদিকে **_Props_** হলো প্যারেন্ট থেকে চাইল্ড কম্পোনেন্টে পাঠানো ডাটা । চাইল্ড কম্পোনেন্ট Props বদলাতে পারে না।
 
-## React Compiler
+#### 3
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**_useState_** হলো React-এর একটি Hook, যেটা ফাংশনাল কম্পোনেন্টে state ডাটা যোগ করতে ব্যবহৃত হয়। React কম্পোনেন্ট যখন রেন্ডার হয়, useState সেই ডাটা ধরে রাখে এবং ডাটার পরিবর্তনে আবার কম্পোনেন্ট রেন্ডার করে দেয়।
