@@ -1,21 +1,17 @@
-const Resolve = ({ completedTicket }) => {
+const AsideCard = ({ tickets, handleCompleted }) => {
   return (
-    <div>
-      <h1 className="font-bold">Resolve Task</h1>
-      <div>
-        {completedTicket.map((ticket) => (
-          <div className=" w-auto bg-white p-2 rounded-xs">
-            <h2 className="font-semibold my-3" key={ticket.id}>
-              {ticket.title}
-            </h2>
-            <button className="bg-[#7280ad] text-white w-full p-1 mb-1 rounded-md ">
-              Completed
-            </button>
-          </div>
-        ))}
+    <div className="mb-2 mt-2 shadow-xs">
+      <div className=" w-auto bg-white p-2 rounded-xs">
+        <h2 className="font-semibold my-3">{tickets.title}</h2>
+        <button
+          onClick={() => handleCompleted(tickets.id)}
+          className="bg-[#02A53B] text-white w-full p-1 mb-1 rounded-md "
+        >
+          Complete
+        </button>
       </div>
     </div>
   );
 };
 
-export default Resolve;
+export default AsideCard;

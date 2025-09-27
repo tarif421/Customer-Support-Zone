@@ -9,7 +9,7 @@ const Resolve = ({ completedTicket }) => {
               {ticket.title}
             </h2>
             <button className="bg-[#7280ad] text-white w-full p-1 mb-1 rounded-md ">
-              Completed
+              <i class="fa-regular fa-circle-check"></i> Completed
             </button>
           </div>
         ))}

@@ -1,4 +1,4 @@
-import Resolve from "./AsideCard";
+import Resolve from "./Resolve";
 import AsideCard from "./AsideCard";
 
 const Aside = ({

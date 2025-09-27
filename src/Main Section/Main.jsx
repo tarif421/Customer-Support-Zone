@@ -1,6 +1,6 @@
-import React, { use } from "react";
-import MainCards from "./MainCards/MainCards";
+import { use } from "react";
 import Aside from "../AsideBox/Aside";
+import MainCards from "./MainCards/MainCards";
 
 const Main = ({
   ticketsPromise,
@@ -8,10 +8,10 @@ const Main = ({
   setSelectedTicket,
   setProgress,
   progress,
-  resolved,
-  setResolved,
-  completedTicket,
   setCompletedTicket,
+  completedTicket,
+  setResolved,
+  resolved,
 }) => {
   const ticketsData = use(ticketsPromise);
 
@@ -27,20 +27,20 @@ const Main = ({
               setSelectedTicket={setSelectedTicket}
               setProgress={setProgress}
               progress={progress}
-              resolved={resolved}
             ></MainCards>
           ))}
+          {/*  */}
         </div>
       </div>
       <Aside
         selectedTicket={selectedTicket}
-        setSelectedTicket={selectedTicket}
-        resolved={resolved}
-        setResolved={setResolved}
         completedTicket={completedTicket}
         setCompletedTicket={setCompletedTicket}
-        progress={progress}
+        setResolved={setResolved}
+        resolved={resolved}
+        setSelectedTicket={setSelectedTicket}
         setProgress={setProgress}
+        progress={progress}
       ></Aside>
     </section>
   );
