@@ -2,11 +2,27 @@ import React from "react";
 import circle from "./../../assets/Ellipse 22.png";
 import Aside from "../../AsideBox/Aside";
 
-const MainCards = ({ ticket }) => {
+const MainCards = ({
+  ticket,
+  selectedTicket,
+  setSelectedTicket,
+  setProgress,
+  progress,
+}) => {
   const { id, title, description, status, customer, priority, createdAt } =
     ticket;
+
+  const handleSelectedTicket = (sideBarTicket) => {
+    setSelectedTicket([...selectedTicket, sideBarTicket]);
+    setProgress(progress + 1);
+  };
   return (
-    <div className=" h-[100px] bg-white p-2 border-2 border-gray-100 shadow-xs">
+    <div
+      onClick={() => {
+        handleSelectedTicket(ticket);
+      }}
+      className=" h-[100px] bg-white p-2 border-2 border-gray-100 shadow-xs"
+    >
       <div className="flex justify-between ">
         <h2 className="font-bold text-[13px]">{title}</h2>
         <p

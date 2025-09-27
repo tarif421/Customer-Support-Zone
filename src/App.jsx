@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./App.css";
 import Banner from "./Banner";
 import Main from "./Main Section/Main";
@@ -10,13 +11,22 @@ const fetchTickets = async () => {
 };
 const ticketsPromise = fetchTickets();
 function App() {
+  const [progress, setProgress] = useState(0);
+  const [selectedTicket, setSelectedTicket] = useState([]);
+
   return (
     <>
       <body className="bg-[#F5F5F5]"></body>
       <Navbar></Navbar>
 
-      <Banner></Banner>
-      <Main ticketsPromise={ticketsPromise}></Main>
+      <Banner progress={progress}></Banner>
+      <Main
+        ticketsPromise={ticketsPromise}
+        selectedTicket={selectedTicket}
+        setSelectedTicket={setSelectedTicket}
+        setProgress={setProgress}
+        progress={progress}
+      ></Main>
     </>
   );
 }

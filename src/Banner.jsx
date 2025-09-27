@@ -1,7 +1,7 @@
 import React from "react";
 import vector1 from "./assets/vector1.png";
 
-const Banner = () => {
+const Banner = ({ progress }) => {
   return (
     <div className=" p-8 max-w-[1280px] mx-auto grid grid-cols-2 gap-5">
       <div className="h-[180px] w-full bg-gradient-to-r from-[#632EE3] to-[#9F62F2] flex flex-col justify-center items-center  relative ">
@@ -13,7 +13,7 @@ const Banner = () => {
         </div>
 
         <h1 className="text-2xl text-white">In-Progress</h1>
-        <p className="text-white text-2xl">0</p>
+        <p className="text-white text-2xl">{progress}</p>
       </div>
 
       <div className="h-150px w-full bg-gradient-to-r from-[#54CF68] to-[#00827A] flex flex-col justify-center items-center relative">

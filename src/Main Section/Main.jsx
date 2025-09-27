@@ -2,7 +2,13 @@ import React, { use } from "react";
 import MainCards from "./MainCards/MainCards";
 import Aside from "../AsideBox/Aside";
 
-const Main = ({ ticketsPromise }) => {
+const Main = ({
+  ticketsPromise,
+  selectedTicket,
+  setSelectedTicket,
+  setProgress,
+  progress,
+}) => {
   const ticketsData = use(ticketsPromise);
 
   return (
@@ -11,15 +17,18 @@ const Main = ({ ticketsPromise }) => {
         <h1 className="font-bold mb-3">Customer Tickets</h1>
         <div className=" grid grid-cols-2 w-full gap-4 ">
           {ticketsData.map((ticket) => (
-            <MainCards ticket={ticket}></MainCards>
+            <MainCards
+              ticket={ticket}
+              selectedTicket={selectedTicket}
+              setSelectedTicket={setSelectedTicket}
+              setProgress={setProgress}
+              progress={progress}
+            ></MainCards>
           ))}
           {/*  */}
         </div>
       </div>
-      <aside className="col-span-4 bg-amber-600 w-full p-3">
-        <h1 className="font-bold">Task Status</h1>
-        <Aside></Aside>
-      </aside>
+      <Aside selectedTicket={selectedTicket}></Aside>
     </section>
   );
 };

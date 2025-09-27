@@ -1,11 +1,19 @@
 import React from "react";
+import AsideCard from "./AsideCard";
+import Resolve from "../Components/Resolve";
 
-const Aside = () => {
+const Aside = ({ selectedTicket }) => {
   return (
-    <div className=" w-auto bg-white p-2">
-      <h2>title</h2>
-      <button className="bg-[#02A53B] text-white w-full p-1">Complete</button>
-    </div>
+    <aside className="col-span-4 w-full p-3 ">
+      <h1 className="font-bold">Task Status</h1>
+      {selectedTicket.length == 0 && (
+        <p className="text-xs mb-3">Select a ticket to add to Task Status</p>
+      )}
+      {selectedTicket.map((tickets) => (
+        <AsideCard tickets={tickets}></AsideCard>
+      ))}
+      <Resolve></Resolve>
+    </aside>
   );
 };
 
