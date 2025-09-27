@@ -57,6 +57,12 @@ const Footer = () => {
           </div>
         </div>
       </div>
+
+      <div className=" flex justify-center max-w-[1280px] mx-auto p-5">
+        <h1 className="text-[#f5f5f595]">
+          © 2025 CS — Ticket System. All rights reserved.
+        </h1>
+      </div>
     </div>
   );
 };

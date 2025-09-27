@@ -16,10 +16,10 @@ const Main = ({
   const ticketsData = use(ticketsPromise);
 
   return (
-    <section className="mt-[22px] max-w-[1280px] mx-auto grid grid-cols-12 px-8 ">
-      <div className=" p-2  col-span-8  ">
+    <section className="mt-[22px] max-w-[1280px] mx-auto grid md:grid-cols-12 px-4 md:px-8 ">
+      <div className=" p-2 col-span-12  md:col-span-8  ">
         <h1 className="font-bold mb-3">Customer Tickets</h1>
-        <div className=" grid grid-cols-2 w-full gap-4 ">
+        <div className=" grid grid-cols-1 md:grid-cols-2 w-full gap-4 ">
           {ticketsData.map((ticket) => (
             <MainCards
               ticket={ticket}

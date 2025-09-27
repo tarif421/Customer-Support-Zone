@@ -4,6 +4,7 @@ import Banner from "./Banner";
 import Main from "./Main Section/Main";
 
 import Navbar from "./Navbar";
+import Footer from "./Components/Footer";
 
 const fetchTickets = async () => {
   const res = await fetch("tickets.json");
@@ -33,6 +34,7 @@ function App() {
         resolved={resolved}
         setResolved={setResolved}
       ></Main>
+      <Footer></Footer>
     </>
   );
 }
