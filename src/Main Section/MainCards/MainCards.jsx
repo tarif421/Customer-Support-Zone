@@ -1,6 +1,7 @@
 import React from "react";
-import circle from "./../../assets/Ellipse 22.png";
+
 import Aside from "../../AsideBox/Aside";
+import { toast } from "react-toastify";
 
 const MainCards = ({
   ticket,
@@ -15,6 +16,7 @@ const MainCards = ({
   const handleSelectedTicket = (sideBarTicket) => {
     setSelectedTicket([...selectedTicket, sideBarTicket]);
     setProgress(progress + 1);
+    toast("in-progress");
   };
   return (
     <div
@@ -34,11 +36,17 @@ const MainCards = ({
               : ""
           } px-2 flex gap-1 items-center rounded-full text-[8px]`}
         >
-          <img
-            className="text-[4px] h-[8px] w-[8px] text-[#9c770090]"
-            src={circle}
-            alt=""
-          />
+          <span className="">
+            <i
+              class={`fa-solid fa-circle  text-[8px]  ${
+                status === "Open"
+                  ? "text-[#02A53B]"
+                  : status === "In-Progress"
+                  ? "text-[#9C7700]"
+                  : ""
+              }`}
+            ></i>
+          </span>
           {status}
         </p>
       </div>

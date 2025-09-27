@@ -13,19 +13,25 @@ const ticketsPromise = fetchTickets();
 function App() {
   const [progress, setProgress] = useState(0);
   const [selectedTicket, setSelectedTicket] = useState([]);
+  const [resolved, setResolved] = useState(0);
+  const [completedTicket, setCompletedTicket] = useState([]);
 
   return (
     <>
       <body className="bg-[#F5F5F5]"></body>
       <Navbar></Navbar>
 
-      <Banner progress={progress}></Banner>
+      <Banner progress={progress} resolved={resolved}></Banner>
       <Main
         ticketsPromise={ticketsPromise}
         selectedTicket={selectedTicket}
         setSelectedTicket={setSelectedTicket}
         setProgress={setProgress}
         progress={progress}
+        setCompletedTicket={setCompletedTicket}
+        completedTicket={completedTicket}
+        resolved={resolved}
+        setResolved={setResolved}
       ></Main>
     </>
   );

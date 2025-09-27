@@ -1,8 +1,25 @@
-import React from "react";
+import Resolve from "./AsideCard";
 import AsideCard from "./AsideCard";
-import Resolve from "../Components/Resolve";
 
-const Aside = ({ selectedTicket }) => {
+const Aside = ({
+  selectedTicket,
+  completedTicket,
+  setCompletedTicket,
+  setResolved,
+  resolved,
+  setSelectedTicket,
+  setProgress,
+  progress,
+}) => {
+  const handleCompletedTicket = (id) => {
+    const completeTicket = selectedTicket.find((tickets) => tickets.id === id);
+    const updatedTicket = selectedTicket.filter((tickets) => tickets.id !== id);
+
+    setCompletedTicket((prev) => [...prev, completeTicket]);
+    setSelectedTicket(updatedTicket);
+    setResolved(resolved + 1);
+    setProgress(progress - 1);
+  };
   return (
     <aside className="col-span-4 w-full p-3 ">
       <h1 className="font-bold">Task Status</h1>
@@ -10,9 +27,12 @@ const Aside = ({ selectedTicket }) => {
         <p className="text-xs mb-3">Select a ticket to add to Task Status</p>
       )}
       {selectedTicket.map((tickets) => (
-        <AsideCard tickets={tickets}></AsideCard>
+        <AsideCard
+          tickets={tickets}
+          handleCompleted={handleCompletedTicket}
+        ></AsideCard>
       ))}
-      <Resolve></Resolve>
+      <Resolve completedTicket={completedTicket}></Resolve>
     </aside>
   );
 };

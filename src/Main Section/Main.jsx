@@ -8,6 +8,10 @@ const Main = ({
   setSelectedTicket,
   setProgress,
   progress,
+  resolved,
+  setResolved,
+  completedTicket,
+  setCompletedTicket,
 }) => {
   const ticketsData = use(ticketsPromise);
 
@@ -23,12 +27,21 @@ const Main = ({
               setSelectedTicket={setSelectedTicket}
               setProgress={setProgress}
               progress={progress}
+              resolved={resolved}
             ></MainCards>
           ))}
-          {/*  */}
         </div>
       </div>
-      <Aside selectedTicket={selectedTicket}></Aside>
+      <Aside
+        selectedTicket={selectedTicket}
+        setSelectedTicket={selectedTicket}
+        resolved={resolved}
+        setResolved={setResolved}
+        completedTicket={completedTicket}
+        setCompletedTicket={setCompletedTicket}
+        progress={progress}
+        setProgress={setProgress}
+      ></Aside>
     </section>
   );
 };
