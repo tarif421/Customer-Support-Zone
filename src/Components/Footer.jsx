@@ -41,10 +41,7 @@ const Footer = () => {
         <div className="flex flex-col ">
           <h1 className="text-[9px] md:text-xs">Socila Links</h1>
           <div className="text-[5px] md:font-xs text-[#f5f5f597] text-xs flex flex-col ">
-            <span>
-              {" "}
-              <i class="fa-brands fa-facebook"></i> @CS — Ticket System
-            </span>
+            <span>Ticket System</span>
             <span>
               <i class="fa-brands fa-linkedin-in"></i> @CS — Ticket System
             </span>
