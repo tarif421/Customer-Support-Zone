@@ -14,7 +14,7 @@ const Banner = ({ progress, resolved }) => {
         </div>
 
         <h1 className="tex-xs md:text-2xl text-white">In-Progress</h1>
-        <p className="text-white text-2xl">{progress}</p>
+        <p className="text-white text-xl md:text-2xl">{progress}</p>
       </div>
 
       <div className="h-[100px] md:h-[180px] w-full bg-gradient-to-r from-[#54CF68] to-[#00827A] flex flex-col justify-center items-center relative">
@@ -25,7 +25,7 @@ const Banner = ({ progress, resolved }) => {
           <img className="" src={vector1} alt="" />
         </div>
         <h1 className="text-xs md:text-2xl text-white">Resolved</h1>
-        <p className="text-white text-2xl">{resolved}</p>
+        <p className="text-white text-xl md:text-2xl">{resolved}</p>
       </div>
     </div>
   );
