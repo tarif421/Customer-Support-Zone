@@ -13,7 +13,7 @@
     "title": "Payment gateway timeout",
     "description": "Checkout fails intermittently; payments timeout after 30s. Occurs on mobile and desktop.",
     "customer": "Sadia Noor",
-    "priority": "Critical",
+    "priority": "High",
     "status": "Open",
     "createdAt": "2025-09-20"
   },
@@ -23,7 +23,7 @@
     "description": "Image upload succeeds but uploaded avatar appears distorted on profile page.",
     "customer": "Rafi Khan",
     "priority": "Medium",
-    "status": "Pending",
+    "status": "Open",
     "createdAt": "2025-09-21"
   },
   {
@@ -58,7 +58,7 @@
     "title": "Notification emails not sent",
     "description": "Transactional emails (password reset, notifications) are queued but not delivered. SMTP returns 421 occasionally.",
     "customer": "Imran Sarker",
-    "priority": "Critical",
+    "priority": "High",
     "status": "Open",
     "createdAt": "2025-09-24"
   },
@@ -68,7 +68,7 @@
     "description": "Layout overlaps on smaller screens; buttons become unclickable.",
     "customer": "Fatema Begum",
     "priority": "Low",
-    "status": "Resolved",
+    "status": "Open",
     "createdAt": "2025-09-15"
   },
   {
@@ -77,7 +77,7 @@
     "description": "CSV export for reports includes extra commas and breaks when fields contain newlines.",
     "customer": "Sabbir Malik",
     "priority": "Medium",
-    "status": "Pending",
+    "status": "Open",
     "createdAt": "2025-09-19"
   },
   {
@@ -104,7 +104,7 @@
     "description": "Several grammatical errors noticed on the terms page; need copy update.",
     "customer": "Marketing Team",
     "priority": "Low",
-    "status": "Resolved",
+    "status": "Open",
     "createdAt": "2025-09-12"
   }
 ]
